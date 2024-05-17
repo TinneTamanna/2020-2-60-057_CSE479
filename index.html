@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link rel="stylesheet" href="styles.css">
+
+
+<Script>
+
+// script.js
+document.addEventListener('DOMContentLoaded', () => {
+    const sections = document.querySelectorAll('.collapsible');
+    sections.forEach(section => {
+        const h2 = section.querySelector('h2');
+        h2.addEventListener('click', () => {
+            section.classList.toggle('active');
+        });
+    });
+});
+
+
+
+</Script>
+
+<style>
+
+/* section.collapsed ul, section.collapsed ol, section.collapsed table, section.collapsed p {
+    display: none;
+}
+
+section h2 {
+    cursor: pointer;
+} */
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.container {
+    width: 88%;
+    border: 1px solid gray;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    border: 0.5px solid #d6d6d6;
+}
+
+.header-left {
+    flex: 1;
+    margin-left: 10px;
+}
+
+.header-right img {
+    max-width: 100px;
+    height: auto;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+header p {
+    margin: 5px 0;
+    margin-bottom: 10px;
+}
+
+main {
+    padding: 20px 0;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+    color: #333;
+    cursor: pointer;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+h2:hover {
+    color: #555;
+}
+
+.collapsible .content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, padding 0.3s ease;
+    padding: 0 15px;
+}
+
+.collapsible.active .content {
+    max-height: 500px; /* Adjust as necessary */
+    padding: 10px 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul li, ol li {
+    background: #f4f4f4;
+    margin: 5px 0;
+    padding: 10px;
+    border-left: 4px solid #333;
+}
+
+footer p {
+    margin: 0;
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: #fff;
+}
+
+
+
+
+</style>
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-left">
+                <h1>Name: Tamanna Sultana Tinne</h1>
+                <p>Address: Dhaka</p>
+                <p>Email: <a href="mailto:2020-2-60-057@std.ewubd.edu">2020-2-60-057@std.ewubd.edu</a></p>
+                <p>Tel: +88015xxxxxx08</p>
+            </div>
+            <div class="header-right">
+                <img src="image.png" alt="Profile Image">
+            </div>
+        </header>
+        <main>
+            <section>
+                <h2>Career Objective</h2>
+                <p>I want to become a full fledged Web-Developer</p>
+            </section>
+            <section>
+                <h2>Present Status</h2>
+                <p>At present I am completing my undergraduate program from East Wes University Bangladesh</p>
+            </section>
+            <section>
+                <h2>Education</h2>
+                <table>
+                    <tr>
+                        <th>Exam</th>
+                        <th>Board/University</th>
+                        <th>Year</th>
+                        <th>Name of Institution</th>
+                        
+                    </tr>
+                    <tr>
+                        <td>SSC</td>
+                        <td>Dhaka Board</td>
+                        <td>2016</td>
+                        <td>Anondo Nagar Adorsho School And College</td>
+
+                    </tr>
+                    <tr>
+                        <td>HSC</td>
+                        <td>Dhaka Board</td>
+                        <td>2018</td>
+                        <td>Anondo Nagar Adorsho School And College</td>
+
+                    </tr>
+                    <tr>
+                        <td>Undergraduate</td>
+                        <td>East West University</td>
+                        <td>2025</td>
+                        <td>Yet to complete</td>
+
+                    </tr>
+                    <!-- Add your education details here -->
+                </table>
+            </section>
+            <section class="collapsible">
+                <h2>Professional Experience</h2>
+                <div class="content">
+                    <ul>
+                        <li>Do not have any professional experience yet</li>
+                        
+                    </ul>
+                </div>
+            </section>
+            <section class="collapsible">
+                <h2>Projects</h2>
+                <div class="content">
+                     <ul>
+                        <li>No professional projects experience yet</li>
+                     </ul>
+                </div>
+            </section>
+            <section class="collapsible">
+                <h2>Academic Projects</h2>
+                <div class="content">
+                    <ul>
+                        <li>An AI based robo-car movement through obstacle detection</li>
+                     </ul>
+                     <ul>
+                         <li>Potato leaf disease detection system using machine learning and python based on Django web framework</li>
+                      </ul>
+                </div>
+            </section>
+            <section class="collapsible">
+                <h2>Achievements</h2>
+                <div class="content">
+                    <ul>
+                        <li>No professional Achievements yet</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="collapsible">
+                <h2>Languages</h2>
+                <div class="content">
+                    <ul>
+                        <li>I am fluent and comfortable with English and Bangla language</li>
+                    
+                    </ul>
+                </div>
+            </section>
+            <section class="collapsible">
+                <h2>Personal Information</h2>
+                <div class="content">
+                    <table>
+                        <tr><td>Full Name:</td><td>Tamanna Sultana Tinne</td></tr>
+                        <tr><td>Father’s Name:</td><td>Tofajjol Hossain</td></tr>
+                        <tr><td>Mother’s Name:</td><td>Shahnaj Parveen</td></tr>
+                        <tr><td>Date of Birth:</td><td>12th june, 2001</td></tr>
+                        <tr><td>Sex:</td><td>Female</td></tr>
+                        <tr><td>Marital Status:</td><td>Unmarried</td></tr>
+                        <tr><td>Nationality:</td><td>Bangladeshi</td></tr>
+                        <tr><td>Religion:</td><td>Islam</td></tr>
+                        <tr><td>Blood Group:</td><td>O + </td></tr>
+                        <tr><td>Present Address:</td><td>Merul Badda, Anondo Nagar Bazar</td></tr>
+                        <tr><td>Permanent Address:</td><td>Gajizpur, Kapashiya</td></tr>
+                    </table>
+                </div>
+            </section>
+            <section class="collapsible">
+                <h2>Hobbies</h2>
+                <div class="content">
+                    <ul>
+                        <li>Watching Movies</li>
+                        <li>Browsing Internet</li>
+                        <li>Playing Arcade Games</li>
+                        <li>Traveling</li>
+                        
+                    </ul>
+                </div>
+            </section>
+            
+            <section class="collapsible">
+                <h2>References</h2>
+                <div class="content">
+                    <p><strong>
+                        Dr. Ahmed Wasif Reza</strong><br>Dhaka<br>Email: <a href="mailto:wasif@ewubd.edu">wasif@ewubd.edu</a><br>Tel: +8801xxxxxxxxx</p>
+                    <p><strong>Dr. Taskeed Jabid</strong><br>Dhaka<br>Email: <a href="mailto:taskeed@ewubd.edu">taskeed@ewubd.edu</a><br>Tel: +8801xxxxxxxxx</p>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>Copyright © Tamanna Sultana Tinne, 2024</p>
+        </footer>
+    </div>
+</body>
+</html>
